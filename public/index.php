@@ -18,7 +18,7 @@ defined('APPLICATION_PATH') || define('APPLICATION_PATH', $dir_app);
 require_once APPLICATION_PATH . DS . 'config' . DS . 'config.php';
 
 // index.php?page=products
-$page = get('page', 'home');
+$page = get('page', 'default');
 $model = $config['PATH_TO_MODEL'] . $page . '.php';
 $view = $config['PATH_TO_VIEW'] . $page . '.phtml';
 $_404 = $config['PATH_TO_VIEW'] . '404.phtml';
