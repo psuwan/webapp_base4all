@@ -16,6 +16,7 @@ $dir_app = $dir_root . DS . 'apps';
 defined('APPLICATION_PATH') || define('APPLICATION_PATH', $dir_app);
 
 require_once APPLICATION_PATH . DS . 'config' . DS . 'config.php';
+include_once APPLICATION_PATH . DS . 'config' . DS . 'app_params.php';
 
 // index.php?page=products
 $page = get('page', 'default');
